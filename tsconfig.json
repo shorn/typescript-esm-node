@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+
+    // ESM, subpath-imports and patterns, top-level await, etc.
+    "module": "node16",
+    "moduleResolution": "node16",
+
+    "esModuleInterop": true,
+    "strict": true,
+
+    "baseUrl": "src",
+    "rootDir": "src",
+    "outDir": "dist",
+
+    // must be same as the package.json "imports" spec
+    "paths": {
+      "#app/*": ["*"]
+    },
+
+  },
+  "include": ["src/**/*"]
+}

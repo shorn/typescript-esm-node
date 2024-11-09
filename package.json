@@ -1,0 +1,42 @@
+{
+  "name": "typescript-esm-node",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc ",
+    "app": "node dist/node-app.js",
+    "preapp": "npm run build",
+    "first-util": "npm run app dist/first-util.js",
+    "second-util": "npm run app dist/second-util.js"
+  },
+  "imports": {
+    "#app/*": "./src/*"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3",
+    "ts-node": "10.9.2",
+    "rimraf": "6.0.1"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "esm",
+    "subpath-imports",
+    "absolute-imports",
+    "command-line",
+    "cli",
+    "ts-node",
+    "module-aliasing",
+    "path-alias",
+    "subpath-patterns",
+    "typescript-cli",
+    "node-modules",
+    "typescript-esm",
+    "no-bundler",
+    "path-resolution"
+  ]
+}
